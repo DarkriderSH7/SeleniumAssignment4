@@ -23,6 +23,13 @@ namespace Assignment4
         }
 
         [Test]
+        public void InsuranceQuote01_ValidDataAge24Exp3Accidents0()
+        {
+            FillForm("SyedSuhaib", "Hussain", "24", "3", "0");
+            AssertValidSubmission("$4000"); 
+        }
+
+        [Test]
         public void InsuranceQuote02_ValidDataAge25Exp3Accidents4()
         {
             FillForm("SyedSuhaib", "Hussain", "25", "3", "4");
